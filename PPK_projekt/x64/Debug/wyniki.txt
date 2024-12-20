@@ -1,0 +1,26 @@
+Poczatkowy wierzcholek: 1
+1 -> 2 : 5.43
+1 -> 4 : 54.76
+1 -> 2 -> 5 : 6.43
+
+Poczatkowy wierzcholek: 2
+2 -> 5 -> 1 : 7.87
+2 -> 5 -> 1 -> 4 : 62.63
+2 -> 5 : 1
+
+Poczatkowy wierzcholek: 4
+4 -> 2 -> 5 -> 1 : 13.74
+4 -> 2 : 5.87
+4 -> 2 -> 5 : 6.87
+
+Poczatkowy wierzcholek: 5
+5 -> 1 : 6.87
+5 -> 1 -> 2 : 12.3
+5 -> 1 -> 4 : 61.63
+
+Poczatkowy wierzcholek: 6
+brak wierzcholka 6 w grafie
+
+Poczatkowy wierzcholek: 7
+brak wierzcholka 7 w grafie
+

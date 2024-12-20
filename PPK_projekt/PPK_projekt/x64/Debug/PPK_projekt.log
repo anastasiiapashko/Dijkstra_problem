@@ -1,0 +1,7 @@
+﻿  funkcje.cpp
+  The contents of <format> are available only with C++20 or later.
+C:\Users\Lenovo\Desktop\polsl\ppk\PPK_projekt\PPK_projekt\funkcje.cpp(41,17): warning C4566: znak przedstawiony przez nazwę zawierającą znaki uniwersalne "\u0142" nie może być przedstawiony w bieżącej stronie kodowej (1251)
+  main.cpp
+  The contents of <format> are available only with C++20 or later.
+  Generowanie kodu...
+  PPK_projekt.vcxproj -> C:\Users\Lenovo\Desktop\polsl\ppk\PPK_projekt\x64\Debug\PPK_projekt.exe

@@ -1,0 +1,51 @@
+\hypertarget{funkcje_8h_source}{}\doxysection{funkcje.\+h}
+\mbox{\hyperlink{funkcje_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <format>}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//Deklaracje\ (Nagłówki)\ Finkcji}}
+\DoxyCodeLine{00018\ \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef\ FUNKCJE\_H\ }\textcolor{comment}{//\ zabezpieczenie\ przed\ wielokrotnym\ dołaczaniem\ pliku\ nagłówkowego}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ FUNKCJE\_H}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structkrawedz}{krawedz}}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ nr\_wierz\_poczatkowy;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ nr\_wierz\_koncowy;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{double}\ waga;}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funkcje_8h_af65a9bf004fc5e78e67dc44c6e806b0c}{odczytaj\_graf}}(std::string\ nazwa\_pliku,\ std::vector<krawedz>*\ krawedzie,\ std::set<int>*\ wierzcholki);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a8d67af4fde3ad520fbba1aa01d3b2a39}{dodaj\_krawedz}}(\textcolor{keywordtype}{int}\ poczatek,\ \textcolor{keywordtype}{int}\ koniec,\ \textcolor{keywordtype}{double}\ waga,\ std::vector<krawedz>*\ krawedzie);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funkcje_8h_a428040709403349460d6dccb0789cbd9}{wierzchowce}}(std::string\ nazwa\_pliku,\ std::set<int>*\ wierzcholki);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a8d67af4fde3ad520fbba1aa01d3b2a39}{dodaj\_krawedz}}(\textcolor{keywordtype}{int}\ poczatek,\ \textcolor{keywordtype}{int}\ koniec,\ \textcolor{keywordtype}{double}\ waga,\ std::vector<krawedz>*\ krawedzie);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00100\ std::string\ \mbox{\hyperlink{funkcje_8h_afc2965cc952f585fb8b035f7941c8db3}{szukanie\_tras}}(std::set<int>*\ zbior\_wierzcholkow,\ std::vector<krawedz>*\ zbior\_krawedzi,\ \textcolor{keywordtype}{int}\ poczatkowy\_wierzcholek);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00112\ std::string\ \mbox{\hyperlink{funkcje_8h_abbdeb7213278a7de6d942dcc8ccb5831}{wypisz\_trase}}(std::map<int,\ int>\&\ poprzedniki,\ \textcolor{keywordtype}{int}\&\ wierzcholek);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00127\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funkcje_8h_a26dcfdde846a51e23bd01aa133303fd9}{znajdz\_najblizszy\_wierzcholek}}(std::set<int>\&\ kolejka\_wierzcholkow,\ std::map<int,\ double>\&\ dystans);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ }
+
+\end{DoxyCode}

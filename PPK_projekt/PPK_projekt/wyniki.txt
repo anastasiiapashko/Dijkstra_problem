@@ -1,0 +1,43 @@
+Poczatkowy wierzcholek: 1
+2 : inf
+3 : inf
+4 : inf
+5 : inf
+1 -> 9 : 7.64
+12 : inf
+
+Poczatkowy wierzcholek: 2
+1 : inf
+2 -> 5 -> 3 : 37.05
+2 -> 5 -> 3 -> 4 : 43.45
+2 -> 5 : 34.65
+9 : inf
+2 -> 5 -> 3 -> 12 : 38.05
+
+Poczatkowy wierzcholek: 4
+1 : inf
+4 -> 3 -> 2 : 60.9
+4 -> 3 : 6.4
+4 -> 3 -> 2 -> 5 : 95.55
+9 : inf
+4 -> 3 -> 12 : 7.4
+
+Poczatkowy wierzcholek: 6
+brak wierzcholka 6 w grafie
+
+Poczatkowy wierzcholek: 9
+1 : inf
+2 : inf
+3 : inf
+4 : inf
+5 : inf
+12 : inf
+
+Poczatkowy wierzcholek: 12
+1 : inf
+12 -> 3 -> 2 : 59
+12 -> 3 : 4.5
+12 -> 3 -> 4 : 10.9
+12 -> 3 -> 2 -> 5 : 93.65
+9 : inf
+

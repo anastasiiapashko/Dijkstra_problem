@@ -1,0 +1,42 @@
+\begin{theindex}
+
+  \item {dodaj\_krawedz}
+    \subitem {funkcje.h}, \hyperpage{8}
+
+  \indexspace
+
+  \item {funkcje.h}, \hyperpage{7}
+    \subitem {dodaj\_krawedz}, \hyperpage{8}
+    \subitem {odczytaj\_graf}, \hyperpage{9}
+    \subitem {szukanie\_tras}, \hyperpage{9}
+    \subitem {wierzchowce}, \hyperpage{10}
+    \subitem {wypisz\_trase}, \hyperpage{10}
+    \subitem {znajdz\_najblizszy\_wierzcholek}, \hyperpage{11}
+
+  \indexspace
+
+  \item {krawedz}, \hyperpage{5}
+
+  \indexspace
+
+  \item {odczytaj\_graf}
+    \subitem {funkcje.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {szukanie\_tras}
+    \subitem {funkcje.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {wierzchowce}
+    \subitem {funkcje.h}, \hyperpage{10}
+  \item {wypisz\_trase}
+    \subitem {funkcje.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {znajdz\_najblizszy\_wierzcholek}
+    \subitem {funkcje.h}, \hyperpage{11}
+
+\end{theindex}

@@ -1,0 +1,193 @@
+\hypertarget{funkcje_8h}{}\doxysection{funkcje.\+h File Reference}
+\label{funkcje_8h}\index{funkcje.h@{funkcje.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$format$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structkrawedz}{krawedz}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{funkcje_8h_af65a9bf004fc5e78e67dc44c6e806b0c}{odczytaj\+\_\+graf}} (std\+::string nazwa\+\_\+pliku, std\+::vector$<$ \mbox{\hyperlink{structkrawedz}{krawedz}} $>$ $\ast$krawedzie, std\+::set$<$ int $>$ $\ast$wierzcholki)
+\begin{DoxyCompactList}\small\item\em Funkcja co sprawdza i odczytuje dane z pliku krawedzie i wierzcholki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a8d67af4fde3ad520fbba1aa01d3b2a39}{dodaj\+\_\+krawedz}} (int poczatek, int koniec, double waga, std\+::vector$<$ \mbox{\hyperlink{structkrawedz}{krawedz}} $>$ $\ast$krawedzie)
+\begin{DoxyCompactList}\small\item\em Funkcha do tworzenia listy krawedzi z jej watrosciami do kazdego parametra. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a428040709403349460d6dccb0789cbd9}{wierzchowce}} (std\+::string nazwa\+\_\+pliku, std\+::set$<$ int $>$ $\ast$wierzcholki)
+\begin{DoxyCompactList}\small\item\em Funkcja co sprawdza i odczytuje wierzcholki z pliku wierzcholki. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{funkcje_8h_afc2965cc952f585fb8b035f7941c8db3}{szukanie\+\_\+tras}} (std\+::set$<$ int $>$ $\ast$zbior\+\_\+wierzcholkow, std\+::vector$<$ \mbox{\hyperlink{structkrawedz}{krawedz}} $>$ $\ast$zbior\+\_\+krawedzi, int poczatkowy\+\_\+wierzcholek)
+\begin{DoxyCompactList}\small\item\em Funkacja do odszukiwania szukanych najkrotszych tras. Pobiera wierzcholki razem z ich dystansem bez powtorzen za pomoca \char`\"{}insert\+\_\+or\+\_\+assign\char`\"{}. Dodawanie elementów odbywa się przy użyciu metody insert(), do której podajemy klucz do dodania (wierzcholek, INFINITY). Jeśli klucz już istnieje w zbiorze, operacja dodawania nie zmienia w żaden sposób zawartości juz pobranych wierzcholkow. Nastepnie tworzenie zbiorow sprawdzonych wierzcholkow; wyluskanie wartosci z pod wzkaznika na wierzcholki, robienie kopii do usuwania jej; dopoki kolejka pobranych wierzcholkow nie jest pusta, to idzie przypisywanie do naimniejszego wierzchowka z funkcji \char`\"{}znajdz\+\_\+najblizszy\+\_\+wierzcholek\char`\"{} ktory to wierzcholek jest razem z jestgo dystansem, jezeli juz wszystko zostalo przeczytane to konczy sie proces przypisywania; po nim do sprawdzonych wierzcholkow beda sie przepisywali wierzcholki bez dublowania, a z kolejki wierzcholkow beda usuwac sie sprawdzone wierzcholki; w kolejnym kroku wykonuje sie relaksacja; i na konie wypisywanie wszystkich informacji w postacie sringu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{funkcje_8h_abbdeb7213278a7de6d942dcc8ccb5831}{wypisz\+\_\+trase}} (std\+::map$<$ int, int $>$ \&poprzedniki, int \&wierzcholek)
+\begin{DoxyCompactList}\small\item\em Funkcka do wypisywania trasy od zadanego wierzcholka do wierzcholka o najmniejszej wadze, przy waronku, ze poprzedni wierzcholek nie jest 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funkcje_8h_a26dcfdde846a51e23bd01aa133303fd9}{znajdz\+\_\+najblizszy\+\_\+wierzcholek}} (std\+::set$<$ int $>$ \&kolejka\+\_\+wierzcholkow, std\+::map$<$ int, double $>$ \&dystans)
+\begin{DoxyCompactList}\small\item\em Funkja do odznalezienia najblizszego wierzcholka. Pszypisaanie poczatkowych wartosci do dystansu(\+INFINITY), a do pierwszego wierzcholka (0). Dopoki wierzcholki sa odczytywane z kolejki, idzie porownanie kazdego dystansu, aby odszukac naijmniejszy z nich. Koniecznie jest odznaleziony wierzcholek o najkrotszym dystansie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funkcje_8h_a8d67af4fde3ad520fbba1aa01d3b2a39}\label{funkcje_8h_a8d67af4fde3ad520fbba1aa01d3b2a39}} 
+\index{funkcje.h@{funkcje.h}!dodaj\_krawedz@{dodaj\_krawedz}}
+\index{dodaj\_krawedz@{dodaj\_krawedz}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{dodaj\_krawedz()}{dodaj\_krawedz()}}
+{\footnotesize\ttfamily void dodaj\+\_\+krawedz (\begin{DoxyParamCaption}\item[{int}]{poczatek,  }\item[{int}]{koniec,  }\item[{double}]{waga,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structkrawedz}{krawedz}} $>$ $\ast$}]{krawedzie }\end{DoxyParamCaption})}
+
+
+
+Funkcha do tworzenia listy krawedzi z jej watrosciami do kazdego parametra. 
+
+dodajemy nową krawedż do wektora
+
+
+\begin{DoxyParams}{Parameters}
+{\em poczatek} & wierzcholek oznaczjacy poczatek krawedzi \\
+\hline
+{\em koniec} & wierzcholek oznaczjacy koniec krawedzi \\
+\hline
+{\em waga} & waga samej krawedzi miedzy poczatkowym a koncowym wierzcholkiem \\
+\hline
+{\em krawedzie} & wskaznik na wektor przechowujacy krawędzi\\
+\hline
+{\em poczatek} & wierzchołek początku \\
+\hline
+{\em koniec} & wierzchołek końca \\
+\hline
+{\em waga} & waga od poczatku do konca \\
+\hline
+{\em krawedzie} & wskażnik na wektor krawędzi\\
+\hline
+\end{DoxyParams}
+Funkcha do tworzenia listy krawedzi z jej watrosciami do kazdego parametra.
+
+
+\begin{DoxyParams}{Parameters}
+{\em poczatek} & wierzchołek początku \\
+\hline
+{\em koniec} & wierzchołek końca \\
+\hline
+{\em waga} & waga od poczatku do konca \\
+\hline
+{\em krawedzie} & wskażnik na wektor krawędzi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_af65a9bf004fc5e78e67dc44c6e806b0c}\label{funkcje_8h_af65a9bf004fc5e78e67dc44c6e806b0c}} 
+\index{funkcje.h@{funkcje.h}!odczytaj\_graf@{odczytaj\_graf}}
+\index{odczytaj\_graf@{odczytaj\_graf}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{odczytaj\_graf()}{odczytaj\_graf()}}
+{\footnotesize\ttfamily bool odczytaj\+\_\+graf (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+\_\+pliku,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structkrawedz}{krawedz}} $>$ $\ast$}]{krawedzie,  }\item[{std\+::set$<$ int $>$ $\ast$}]{wierzcholki }\end{DoxyParamCaption})}
+
+
+
+Funkcja co sprawdza i odczytuje dane z pliku krawedzie i wierzcholki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+\_\+pliku} & nazwa pliku z ktorego wczytujemy graf \\
+\hline
+{\em krawedzie} & wskaznik na wektor przechowujacy krawędzi \\
+\hline
+{\em wierzcholki} & wskaznik na zbior przechowujacy wierzcholki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca czy funkcja się udała 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_afc2965cc952f585fb8b035f7941c8db3}\label{funkcje_8h_afc2965cc952f585fb8b035f7941c8db3}} 
+\index{funkcje.h@{funkcje.h}!szukanie\_tras@{szukanie\_tras}}
+\index{szukanie\_tras@{szukanie\_tras}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{szukanie\_tras()}{szukanie\_tras()}}
+{\footnotesize\ttfamily std\+::string szukanie\+\_\+tras (\begin{DoxyParamCaption}\item[{std\+::set$<$ int $>$ $\ast$}]{zbior\+\_\+wierzcholkow,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structkrawedz}{krawedz}} $>$ $\ast$}]{zbior\+\_\+krawedzi,  }\item[{int}]{poczatkowy\+\_\+wierzcholek }\end{DoxyParamCaption})}
+
+
+
+Funkacja do odszukiwania szukanych najkrotszych tras. Pobiera wierzcholki razem z ich dystansem bez powtorzen za pomoca \char`\"{}insert\+\_\+or\+\_\+assign\char`\"{}. Dodawanie elementów odbywa się przy użyciu metody insert(), do której podajemy klucz do dodania (wierzcholek, INFINITY). Jeśli klucz już istnieje w zbiorze, operacja dodawania nie zmienia w żaden sposób zawartości juz pobranych wierzcholkow. Nastepnie tworzenie zbiorow sprawdzonych wierzcholkow; wyluskanie wartosci z pod wzkaznika na wierzcholki, robienie kopii do usuwania jej; dopoki kolejka pobranych wierzcholkow nie jest pusta, to idzie przypisywanie do naimniejszego wierzchowka z funkcji \char`\"{}znajdz\+\_\+najblizszy\+\_\+wierzcholek\char`\"{} ktory to wierzcholek jest razem z jestgo dystansem, jezeli juz wszystko zostalo przeczytane to konczy sie proces przypisywania; po nim do sprawdzonych wierzcholkow beda sie przepisywali wierzcholki bez dublowania, a z kolejki wierzcholkow beda usuwac sie sprawdzone wierzcholki; w kolejnym kroku wykonuje sie relaksacja; i na konie wypisywanie wszystkich informacji w postacie sringu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zbior\+\_\+wierzcholkow} & przypisanie zbioru wierzcholkow \\
+\hline
+{\em zbior\+\_\+krawedzi} & przypisanie zbioru krawedzi \\
+\hline
+{\em poczatkowy\+\_\+wierzcholek} & poczatkowy wierzcholek \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca szukane trasy w postacie string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a428040709403349460d6dccb0789cbd9}\label{funkcje_8h_a428040709403349460d6dccb0789cbd9}} 
+\index{funkcje.h@{funkcje.h}!wierzchowce@{wierzchowce}}
+\index{wierzchowce@{wierzchowce}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wierzchowce()}{wierzchowce()}}
+{\footnotesize\ttfamily bool wierzchowce (\begin{DoxyParamCaption}\item[{std\+::string}]{nazwa\+\_\+pliku,  }\item[{std\+::set$<$ int $>$ $\ast$}]{wierzcholki }\end{DoxyParamCaption})}
+
+
+
+Funkcja co sprawdza i odczytuje wierzcholki z pliku wierzcholki. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+\_\+pliku} & nazwa pliku z ktorego wczytujemy wierzcholki \\
+\hline
+{\em wierzcholki} & wskaznik na zbior przechowujacy wierzcholki \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca czy funkcja się udała 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_abbdeb7213278a7de6d942dcc8ccb5831}\label{funkcje_8h_abbdeb7213278a7de6d942dcc8ccb5831}} 
+\index{funkcje.h@{funkcje.h}!wypisz\_trase@{wypisz\_trase}}
+\index{wypisz\_trase@{wypisz\_trase}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wypisz\_trase()}{wypisz\_trase()}}
+{\footnotesize\ttfamily std\+::string wypisz\+\_\+trase (\begin{DoxyParamCaption}\item[{std\+::map$<$ int, int $>$ \&}]{poprzedniki,  }\item[{int \&}]{wierzcholek }\end{DoxyParamCaption})}
+
+
+
+Funkcka do wypisywania trasy od zadanego wierzcholka do wierzcholka o najmniejszej wadze, przy waronku, ze poprzedni wierzcholek nie jest 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poprzedniki} & zbior poprzednikow wierzchplkow \\
+\hline
+{\em wierzcholek} & wierzcholek do ktorego jest odszukiwana trasa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca trase z koncowym wierzkowkiem razem z jego poprzednikiem  
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a26dcfdde846a51e23bd01aa133303fd9}\label{funkcje_8h_a26dcfdde846a51e23bd01aa133303fd9}} 
+\index{funkcje.h@{funkcje.h}!znajdz\_najblizszy\_wierzcholek@{znajdz\_najblizszy\_wierzcholek}}
+\index{znajdz\_najblizszy\_wierzcholek@{znajdz\_najblizszy\_wierzcholek}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{znajdz\_najblizszy\_wierzcholek()}{znajdz\_najblizszy\_wierzcholek()}}
+{\footnotesize\ttfamily int znajdz\+\_\+najblizszy\+\_\+wierzcholek (\begin{DoxyParamCaption}\item[{std\+::set$<$ int $>$ \&}]{kolejka\+\_\+wierzcholkow,  }\item[{std\+::map$<$ int, double $>$ \&}]{dystans }\end{DoxyParamCaption})}
+
+
+
+Funkja do odznalezienia najblizszego wierzcholka. Pszypisaanie poczatkowych wartosci do dystansu(\+INFINITY), a do pierwszego wierzcholka (0). Dopoki wierzcholki sa odczytywane z kolejki, idzie porownanie kazdego dystansu, aby odszukac naijmniejszy z nich. Koniecznie jest odznaleziony wierzcholek o najkrotszym dystansie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kolejka\+\_\+wierzcholkow} & rozpatrywane wierzcholki \\
+\hline
+{\em dystans} & dystans do wierzcholkow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwaraca naimniejszy wierzcholek
+\end{DoxyReturn}
+Funkja do odznalezienia najblizszego wierzcholka. Pszypisaanie poczatkowych wartosci do dystansu(\+INFINITY), a do pierwszego wierzcholka (0). Dopoki wierzcholki sa odczytywane z kolejki, idzie porownanie kazdego dystansu, aby odszukac naijmniejszy z nich. Koniecznie jest odznaleziony wierzcholek o najkrotszym dystansie 
